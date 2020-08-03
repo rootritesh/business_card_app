@@ -45,10 +45,10 @@ myApp() {
 
   var myhome = Scaffold(
     appBar: AppBar(
-        // backgroundColor: Colors.yellow.shade400,
+        backgroundColor: Colors.green.shade400,
         title: Center(
-      child: Text('Business Card'),
-    )),
+          child: Text('Business Card'),
+        )),
     body: cont,
   );
 
