@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 myApp() {
-  var url ="https://github.com/rootritesh/business_card_app/raw/master/image/logo.jfif"
   var cont = Container(
       alignment: Alignment.center,
       height: double.infinity,
@@ -13,7 +12,7 @@ myApp() {
         alignment: Alignment.topCenter,
         children: <Widget>[
           Container(
-            margin: EdgeInsets.all(30),
+            margin: EdgeInsets.all(50),
             // margin: EdgeInsets.all(10),
             // padding: EdgeInsets.all(50),
             alignment: Alignment.center,
@@ -32,14 +31,16 @@ myApp() {
           ),
           Container(
             decoration: BoxDecoration(
-              // color: Colors.blue.shade400,
-              borderRadius: BorderRadius.circular(50),
-              border: Border.all(width: 2),
-              image: DecorationImage(image: NetworkImage(url),)
-            ),
+                // color: Colors.blue.shade400,
+                borderRadius: BorderRadius.circular(60),
+                border: Border.all(width: 2, color: Colors.amber),
+                image: DecorationImage(
+                  image: NetworkImage(
+                      'https://raw.githubusercontent.com/rootritesh/business_card_app/master/image/logo2.png'),
+                )),
             alignment: Alignment.center,
-            width: 100,
-            height: 100,
+            width: 120,
+            height: 120,
             // color: Colors.blue,
           ),
         ],
