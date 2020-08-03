@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 myApp() {
+  var url ="https://github.com/rootritesh/business_card_app/raw/master/image/logo.jfif"
   var cont = Container(
       alignment: Alignment.center,
       height: double.infinity,
@@ -31,9 +32,10 @@ myApp() {
           ),
           Container(
             decoration: BoxDecoration(
-              color: Colors.blue.shade400,
+              // color: Colors.blue.shade400,
               borderRadius: BorderRadius.circular(50),
               border: Border.all(width: 2),
+              image: DecorationImage(image: NetworkImage(url),)
             ),
             alignment: Alignment.center,
             width: 100,
