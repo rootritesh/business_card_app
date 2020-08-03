@@ -3,12 +3,17 @@ import 'package:flutter/material.dart';
 myApp() {
   var cont = Container(
       height: 320,
-      width: 320,
-      //color: Colors.red,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(width: 2),
-      ));
+      width: double.infinity,
+      color: Colors.black45,
+      margin: EdgeInsets.all(50),
+      padding: EdgeInsets.all(50),
+      child: Text('This is text inside container')
+      // decoration: BoxDecoration(
+      //   color: Colors.red.shade400,
+      //   borderRadius: BorderRadius.circular(20),
+      //   border: Border.all(width: 2),
+      // )
+      );
 
   var myhome = Scaffold(
     appBar: AppBar(
@@ -16,7 +21,7 @@ myApp() {
         title: Center(
           child: Text('Business Card'),
         )),
-    body: Center(child: cont),
+    body: cont,
   );
 
   return MaterialApp(home: myhome);
