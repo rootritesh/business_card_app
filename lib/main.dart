@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'ui/home.dart';
-import 'ui/profile.dart';
-import 'package:toast/toast.dart';
+import './ui/home.dart';
+import './ui/profile.dart';
+// import 'package:toast/toast.dart';
 
 main() {
   runApp(hot_reload());
