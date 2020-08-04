@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './ui/home.dart';
-import './ui/profile.dart';
+import 'ui/profile.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 // import 'package:toast/toast.dart';
 
 main() {

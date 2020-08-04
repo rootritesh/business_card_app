@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
-// import 'package:toast/toast.dart';
-import './home.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 myApp() {
+  mytost() {
+    Fluttertoast.showToast(
+        msg: "This is Center Short Toast",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+        fontSize: 16.0);
+  }
+
   var cont = Container(
       alignment: Alignment.center,
       height: double.infinity,
@@ -40,6 +50,12 @@ myApp() {
                       style: TextStyle(fontSize: 18, color: Colors.white),
                     )
                   ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    IconButton(icon: Icon(Icons.add_circle), onPressed: null)
+                  ],
                 )
               ],
             ),
@@ -64,7 +80,9 @@ myApp() {
   var myhome = Scaffold(
     appBar: AppBar(
         backgroundColor: Colors.green.shade400,
-        actions: <Widget>[IconButton(icon: null, onPressed: null)],
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.account_circle), onPressed: null)
+        ],
         title: Center(
           child: Text('Business Card'),
         )),
