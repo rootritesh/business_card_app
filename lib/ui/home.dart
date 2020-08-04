@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toast/toast.dart';
 
 myApp() {
   var cont = Container(
@@ -29,6 +30,10 @@ myApp() {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      color: Colors.white,
+                    ),
                     Text(
                       'rootritesh64@gmail.com',
                       style: TextStyle(fontSize: 18, color: Colors.white),
