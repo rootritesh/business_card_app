@@ -24,7 +24,16 @@ myApp() {
               children: <Widget>[
                 Text(
                   'Ritesh Singh',
-                  style: TextStyle(fontSize: 20, color: Colors.white),
+                  style: TextStyle(fontSize: 18, color: Colors.white),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'rootritesh64@gmail.com',
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    )
+                  ],
                 )
               ],
             ),
